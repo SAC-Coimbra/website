@@ -77,8 +77,6 @@ p {
 	font-family: "Lato", Helvetica, Arial, sans-serif;
 }
 /* End Fonts */
-
-
 section {
 	position: relative;
 }
@@ -125,6 +123,9 @@ section {
 	/* height: 98px; */
 }
 
+.navbar-header {
+	padding-top: 24px !important;
+}
 
 /* ===== Begin text colors ===== */
 .text-main { color: #363940; } /* Theme main color */
@@ -1092,7 +1093,7 @@ p.subtitle {
 	transition-timing-function: ease-out;
 }
 .btn-blank:hover, .btn-blank:focus, .btn-blank:active {
-	color: #333;
+	color: #ffd83b;
 }
 .btn-blank:hover:before, .btn-blank:focus:before, .btn-blank:active:before {
 	-webkit-transform: scaleY(1);

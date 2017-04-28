@@ -27,7 +27,7 @@
     </div><!-- /.container -->
   </nav> <!-- End Navbar -->
 
-  <section id="text-carousel-intro-section" class="parallax" data-stellar-background-ratio="0.5" style="background-color: #0E1A2A; height: 700px;">
+  <section id="text-carousel-intro-section" class="parallax" data-stellar-background-ratio="0.5" style="background-color: #0e1a2a; height: 600px">
     <div class="container">
       <div class="caption text-center text-white" data-stellar-ratio="0.7">
         <h1>Secção de Astronomia</h1>

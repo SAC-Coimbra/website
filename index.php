@@ -29,7 +29,7 @@
   <link rel="stylesheet" href="<?php echo get_home_url(); ?>/wp-content/themes/website/css/theme.css">
 
 </head>
-<body data-spy= "scroll" data-target = "#main-navbar">
+  <body data-spy="scroll" data-target="#main-navbar">
   <div class="body">
     <?php get_header( 'home' );?>
 
