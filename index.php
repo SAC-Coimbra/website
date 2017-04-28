@@ -22,11 +22,36 @@
   <link rel="stylesheet" href="<?php echo get_home_url(); ?>/wp-content/themes/website/css/reset.css">
   <link rel="stylesheet" href="<?php echo get_home_url(); ?>/wp-content/themes/website/css/style.css">
   <link rel="stylesheet" href="<?php echo get_home_url(); ?>/wp-content/themes/website/css/mobile.css">
+  <link rel="stylesheet" href"<?php echo get_home_url(); ?>/wp-content/themes/website/include/owl-carousel/css/owl.carousel.css">
+  <link rel="stylesheet" href"<?php echo get_home_url(); ?>/wp-content/themes/website/include/owl-carousel/css/owl.theme.css">
 
   <!-- Main CSS -->
-  <link rel="stylesheet" href="<?php echo get_home_url(); ?>/wp-content/themes/website/css/sac_theme.css">
+  <link rel="stylesheet" href="<?php echo get_home_url(); ?>/wp-content/themes/website/css/theme.css">
 
 </head>
-<body>
-  <?php get_header( 'home' );?>
+<body data-spy= "scroll" data-target = "#main-navbar">
+  <div class="body">
+    <?php get_header( 'home' );?>
+
+
+  </div>
+
+
+
+
+  <!-- Plugins JS -->
+  <script src="<?php echo get_home_url(); ?>/wp-content/themes/website/include/jquery/jquery-1.11.1.min.js"></script>
+  <script src="<?php echo get_home_url(); ?>/wp-content/themes/website/include/bootstrap/js/bootstrap.min.js"></script>
+  <script src="<?php echo get_home_url(); ?>/wp-content/themes/website/include/owl-carousel/js/owl.carousel.min.js"></script>
+  <script src="<?php echo get_home_url(); ?>/wp-content/themes/website/include/stellar/js/jquery.stellar.min.js"></script>
+  <script src="<?php echo get_home_url(); ?>/wp-content/themes/website/include/animations/js/wow.min.js"></script>
+  <script src="<?php echo get_home_url(); ?>/wp-content/themes/website/include/waypoints.min.js"></script>
+  <script src="<?php echo get_home_url(); ?>/wp-content/themes/website/include/isotope.pkgd.min.js"></script>
+  <script src="<?php echo get_home_url(); ?>/wp-content/themes/website/include/classie.js"></script>
+  <script src="<?php echo get_home_url(); ?>/wp-content/themes/website/include/jquery.easing.min.js"></script>
+  <script src="<?php echo get_home_url(); ?>/wp-content/themes/website/include/jquery.counterup.min.js"></script>
+  <script src="<?php echo get_home_url(); ?>/wp-content/themes/website/include/smoothscroll.js"></script>
+
+  <!-- Theme JS -->
+  <script src="<?php echo get_home_url(); ?>/wp-content/themes/website/js/theme.js"></script>
 </body>
