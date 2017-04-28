@@ -73,6 +73,14 @@ h5 {
 p {
 	font: 14px/1.5em "Roboto";
 }
+
+hr.small {
+  max-width: 100px;
+  margin: 10px auto;
+  border-width: 2px;
+  border-color: #0e1a2a;
+}
+
 .navbar-nav > li > a {
 	font-family: "Lato", Helvetica, Arial, sans-serif;
 }
@@ -124,7 +132,8 @@ section {
 }
 
 .navbar-header {
-	padding-top: 24px !important;
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;
 }
 
 /* ===== Begin text colors ===== */
@@ -310,10 +319,10 @@ section {
 }
 a.rotate-box-1, a.rotate-box-2 {
 	text-decoration: none;
-	color: #363940;
+	color: #3c3c3c;
 }
 a.rotate-box-1:hover, a.rotate-box-2:hover {
-	color: #676D75;
+	color: #3c3c3c;
 }
 .rotate-box-1 .rotate-box-icon {
 	display: inline-block;
@@ -951,6 +960,7 @@ ul.imp-links li a {
 }
 .page-header h2 {
 	text-transform: uppercase;
+	color: #ffd83b;
 }
 p.subtitle {
 	letter-spacing: 2px;

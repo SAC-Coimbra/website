@@ -27,14 +27,14 @@
     </div><!-- /.container -->
   </nav> <!-- End Navbar -->
 
-  <section id="text-carousel-intro-section" class="parallax" data-stellar-background-ratio="0.5" style="background-color: #0e1a2a; height: 600px">
+  <section id="text-carousel-intro-section" class="parallax" data-stellar-background-ratio="0.5" style="background-color: #0e1a2a; height: 100vh">
     <div class="container">
       <div class="caption text-center text-white" data-stellar-ratio="0.7">
         <h1>Secção de Astronomia</h1>
         <p>A SAC (Secção de Astronomia da Associação Académica de Coimbra), foi fundada a 9 de Maio de 1989, com o objectivo de divulgar a Astronomia.
 </p>
         <div class="extra-space-l"></div>
-        <a class="btn btn-blank" href="#" role="button">Ver mais!</a>
+        <a class="btn btn-blank page-scroll" href="#about-section" role="button">Ver mais!</a>
       </div>
     </div>
   </section>
