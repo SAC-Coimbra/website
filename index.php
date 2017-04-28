@@ -96,11 +96,20 @@
                 </div> <!-- /.container -->
             </div>
             <!-- End rotate box-1 -->
-
             <div class="extra-space-l"></div>
-      </section>
+  </section>
 
+  <section id="projects-section" class = "page projects">
+    <div class="page-header-wrapper">
+        <div class="container">
+            <div class="page-header text-center wow fadeInUp" data-wow-delay="0.3s">
+                <h2>Projectos</h2>
+                <hr class="small">
+            </div>
+        </div>
+    </div>
 
+  </section>
 
 
   <!-- Plugins JS -->

@@ -142,6 +142,9 @@ a, a:hover, a:focus {
 	background: #f8f8f8 url('../../img/pat-bg.png') repeat;
 }
 
+.projects {
+	background: #f8f8f8;
+}
 
 /* === Portfolio === */
 .active_prot_menu a, .portfolio_menu ul li a:hover{
