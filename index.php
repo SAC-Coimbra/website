@@ -105,16 +105,35 @@
             <div class="page-header text-center wow fadeInUp" data-wow-delay="0.3s">
                 <h2>Projectos</h2>
                 <hr class="small">
-
-                <!-- get id from category -->
-                <?php $category_id = get_cat_ID('projectos'); ?>
-                <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-                  <?php if ( in_category($category_id) ) { ?>
-                    <!-- html aqui -->
-                    <?php } ?>
-                    <?php endwhile; else: ?>
-                       <p>Colocar projectos (categoria = projectos)</p>
-                  <?php endif; ?>
+                <div class="extra-space-l"></div>
+                <div class="row">
+                              <!-- get id from category -->
+                   <?php $category_id = get_cat_ID('projectos'); ?>
+                    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                                <?php if ( in_category($category_id) ) { ?>
+                                  <div class="col-xs-12 col-sm-4">
+                                      <div class="portfolio_single_content">
+                                  <!-- html aqui -->
+                                  <img src="<?php
+                                  if (has_post_thumbnail()){
+                                      $thumb_id = get_post_thumbnail_id( $post->ID );
+                                      $image = wp_get_attachment_image_src( $thumb_id,'full' );
+                                      echo $image[0];
+                                  }
+                                  ?>" alt="title"/>
+                                  <div>
+                                    <a href="#"><?php the_title(); ?></a>
+                                    <span><?php the_content(); ?></span>
+                                  </div>
+                                </div>
+                            </div>
+                                  <?php } ?>
+                                  <?php endwhile; else: ?>
+                                     <p>Colocar projectos (categoria = projectos)</p>
+                              <?php endif; ?>
+                      </div>
+                  </div>
+                </div>
             </div>
         </div>
     </div>
