@@ -10,7 +10,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand page-scroll" href="<?php get_home_url() ?>">SAC</a>
+        <a class="navbar-brand page-scroll" href="<?php get_home_url()#?>">SAC</a>
       </div>
 
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

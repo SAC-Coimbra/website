@@ -140,6 +140,7 @@
 
   </section>
 
+  <?php get_footer(); ?>
 
   <!-- Plugins JS -->
   <script src="<?php echo get_home_url(); ?>/wp-content/themes/website/include/jquery/jquery-1.11.1.min.js"></script>
