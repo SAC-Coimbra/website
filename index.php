@@ -57,7 +57,7 @@
                                 <span class="rotate-box-icon"><i class="fa fa-users"></i></span>
                                 <div class="rotate-box-info">
                                     <h4>Quem somos?</h4>
-                                    <p>Lorem ipsum dolor sit amet set, consectetur utes anet adipisicing elit, sed do eiusmod tempor incidist.</p>
+                                    <p>Um grupo de estudantes das mais variadas áreas com um interesse comum: astronomia</p>
                                 </div>
                             </a>
                         </div>
@@ -67,7 +67,7 @@
                                 <span class="rotate-box-icon"><i class="fa fa-diamond"></i></span>
                                 <div class="rotate-box-info">
                                     <h4>O que fazemos?</h4>
-                                    <p>Lorem ipsum dolor sit amet set, consectetur utes anet adipisicing elit, sed do eiusmod tempor incidist.</p>
+                                    <p>Desenvolvemos projectos e organizamos eventos de divulgação de astronomia</p>
                                 </div>
                             </a>
                         </div>
@@ -77,7 +77,7 @@
                                 <span class="rotate-box-icon"><i class="fa fa-heart"></i></span>
                                 <div class="rotate-box-info">
                                     <h4>Porque fazemos?</h4>
-                                    <p>Lorem ipsum dolor sit amet set, consectetur utes anet adipisicing elit, sed do eiusmod tempor incidist.</p>
+                                    <p>Para aplicarmos os conhecimentos que os nossos cursos nos dão nesta área que nos interessa, e para transmitirmos o que sabemos e aprendemos a todos os curiosos pelo Cosmos</p>
                                 </div>
                             </a>
                         </div>
@@ -87,7 +87,7 @@
                                 <span class="rotate-box-icon"><i class="fa fa-clock-o"></i></span>
                                 <div class="rotate-box-info">
                                     <h4>Desde quando?</h4>
-                                    <p>Lorem ipsum dolor sit amet set, consectetur utes anet adipisicing elit, sed do eiusmod tempor incidist.</p>
+                                    <p>Nascemos enquanto Secção Cultural da Associação Académica de Coimbra a 9 de Maio de 1989</p>
                                 </div>
                             </a>
                         </div>
@@ -105,6 +105,16 @@
             <div class="page-header text-center wow fadeInUp" data-wow-delay="0.3s">
                 <h2>Projectos</h2>
                 <hr class="small">
+
+                <!-- get id from category -->
+                <?php $category_id = get_cat_ID('projectos'); ?>
+                <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                  <?php if ( in_category($category_id) ) { ?>
+                    <!-- html aqui -->
+                    <?php } ?>
+                    <?php endwhile; else: ?>
+                       <p>Colocar projectos (categoria = projectos)</p>
+                  <?php endif; ?>
             </div>
         </div>
     </div>
