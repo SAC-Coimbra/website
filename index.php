@@ -140,6 +140,24 @@
 
   </section>
 
+  <section id="calendar-section" class="page bg-style1">
+            <!-- Begin page header-->
+            <div class="page-header-wrapper">
+                <div class="container">
+                    <div class="page-header text-center wow fadeInUp" data-wow-delay="0.3s">
+                        <h2>Calendário</h2>
+                        <hr class="small">
+
+                        <!-- <div class="devider"></div> -->
+                    </div>
+                </div>
+            </div>
+            <!-- End page header-->
+
+            <div class="extra-space-l"></div>
+  </section>
+
+
   <?php get_footer(); ?>
 
   <!-- Plugins JS -->

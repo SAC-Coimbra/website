@@ -18,9 +18,9 @@
               <!-- <li><a class="page-scroll" href="body">Home</a></li> -->
               <li><a class="page-scroll" href="#about-section">Sobre</a></li>
               <li><a class="page-scroll" href="#projects-section">Projectos</a></li>
-              <li><a class="page-scroll" href="#portfolio-section">Calendário</a></li>
-              <li><a class="page-scroll" href="#team-section">Blog</a></li>
+              <li><a class="page-scroll" href="#calendar-section">Calendário</a></li>
               <li><a class="page-scroll" href="#prices-section">Equipa</a></li>
+              <li><a class="page-scroll" href="#team-section">Blog</a></li>
               <li><a class="page-scroll" href="#contact-section">Contactos</a></li>
           </ul>
       </div><!-- /.navbar-collapse -->
