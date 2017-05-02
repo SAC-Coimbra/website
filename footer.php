@@ -12,7 +12,7 @@
                   <div class= "col-sm-3 col-md-3">
                     <p style = "color: #ffd83b;">Endereço</p>
                   </div>
-                  <div class= "col-sm-9 col-md-3" style = "border-left: 2px solid white;">
+                  <div class= "col-sm-9 col-md-9" style = "border-left: 2px solid white;">
                     <p> Departamento de Física da </p>
                     <p>Universidade de Coimbra </p>
                     <p> R. Larga, 3004-516 Coimbra </p>
