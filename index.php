@@ -147,14 +147,61 @@
                     <div class="page-header text-center wow fadeInUp" data-wow-delay="0.3s">
                         <h2>Calendário</h2>
                         <hr class="small">
-
-                        <!-- <div class="devider"></div> -->
+                        <div class="extra-space-l"></div>
+            <?php
+              $aux = 1;
+              $events = eo_get_events(array(
+                'numberposts'=>5,
+                'event_start_after'=>'today',
+                'showpastevents'=>true, //Will be deprecated, but set it to true to play it safe.
+              )); ?>
+            <?php
+              if($events): ?>
+            <?php
+            foreach ($events as $event):
+                if ($aux): ?>
+                  <div class = "row">
+                  <div class = "col-md-2"> </div>
+                  <div class = "col-md-2 text-left" style = "border-left: 2px solid #ffd83b;"">
+                  <?php
+                  //Check if all day, set format accordingly
+                  $format = ( eo_is_all_day($event->ID) ? get_option('date_format') : get_option('date_format').' '.get_option('time_format'));
+                  printf(
+                    '<h3> %s </h3> <h3> %s </h3>', eo_get_the_start( 'M', $event->ID, $event->occurrence_id ), eo_get_the_start( 'd', $event->ID, $event->occurrence_id )
+                  ); ?>
+                  </div>
+                  <div class = "col-md-6 text-left">
+                  <p><?php echo get_post_field('post_content', $event->ID); ?> </p>
+                  </div>
+                  <div class = "col-md-2"> </div>
+                  </div>
+                  <div class="extra-space-l"></div>
+                  <?php $aux = 0; ?>
+                <?php else: ?>
+                  <div class = "row">
+                  <div class = "col-md-2"> </div>
+                  <div class = "col-md-6 text-right">
+                  <p><?php echo get_post_field('post_content', $event->ID); ?> </p>
+                  </div>
+                  <div class = "col-md-2 text-right" style = "border-right: 2px solid #0E1A2A;"">
+                  <?php
+                  //Check if all day, set format accordingly
+                  $format = ( eo_is_all_day($event->ID) ? get_option('date_format') : get_option('date_format').' '.get_option('time_format'));
+                  printf(
+                    '<h3> %s </h3> <h3> %s </h3>', eo_get_the_start( 'M', $event->ID, $event->occurrence_id ), eo_get_the_start( 'd', $event->ID, $event->occurrence_id )
+                  ); ?>
+                  </div>
+                  <div class = "col-md-2"> </div>
+                  </div>
+                  <div class="extra-space-l"></div>
+                  <?php $aux = 1; ?>
+                <?php endif;?>
+            <?php endforeach; ?>
+            <?php endif;?>
                     </div>
                 </div>
             </div>
             <!-- End page header-->
-
-            <div class="extra-space-l"></div>
   </section>
 
 
