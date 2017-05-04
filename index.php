@@ -171,6 +171,7 @@
                   ); ?>
                   </div>
                   <div class = "col-md-6 text-left">
+                  <h4> <?php echo get_post_field('post_title', $event->ID); ?> </h4>
                   <p><?php echo get_post_field('post_content', $event->ID); ?> </p>
                   </div>
                   <div class = "col-md-2"> </div>
@@ -181,6 +182,7 @@
                   <div class = "row">
                   <div class = "col-md-2"> </div>
                   <div class = "col-md-6 text-right">
+                  <h4> <?php echo get_post_field('post_title', $event->ID); ?> </h4>
                   <p><?php echo get_post_field('post_content', $event->ID); ?> </p>
                   </div>
                   <div class = "col-md-2 text-right" style = "border-right: 2px solid #0E1A2A;"">
